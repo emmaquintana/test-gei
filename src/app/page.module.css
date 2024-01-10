@@ -9,6 +9,14 @@
     background-color: #ff2890;    
 }
 
+.logo {
+    position: absolute;
+    width: 100dvw;
+    top: 0;
+    margin: 5px;    
+    user-select: none;
+}
+
 .text { color: beige; }
 
 .buttonsContainer {
@@ -30,7 +38,7 @@
     color: #fff;
     border: 2px solid beige;
     border-radius: 10px;    
-    font-size: clamp(15px, 5vw, 25px);
+    font-size: clamp(20px, 5vw, 25px);
     transition: .3s all;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
