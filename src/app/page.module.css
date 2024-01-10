@@ -6,7 +6,8 @@
     gap: 10px;
     height: 100dvh;
     text-align: center;
-    background-color: #ff2890;    
+    background-color: #ff2890;        
+    min-height: 300px;
 }
 
 .logo {
