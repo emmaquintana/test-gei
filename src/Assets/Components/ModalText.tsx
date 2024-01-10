@@ -1,4 +1,5 @@
 import styles from './Styles/ModalText.module.css'
+import animations from './Animations/Animations.module.css';
 
 
 type ModalTextProps = {
@@ -18,8 +19,8 @@ export default function ModalText({
 }: ModalTextProps) {
 
     return (
-        <div className={styles.overlay}>
-            <section className={`${styles.container} ${className}`}>
+        <div className={`${styles.overlay} ${animations.fadeOutToIn}`}>
+            <section className={`${styles.container} ${animations.fadeOutToInFromBottom} ${className}`}>
                 <main className={`${styles.textContainer}`}>
                     {content}
                 </main>
