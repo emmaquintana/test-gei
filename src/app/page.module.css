@@ -39,10 +39,14 @@
     border: 2px solid beige;
     border-radius: 10px;    
     font-size: clamp(20px, 5vw, 25px);
-    transition: .3s all;
+    transition: .2s all;
     cursor: pointer;
+    user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
+
+.button:nth-child(1):active { transform: scale(.9); }
+.button:nth-child(2) { cursor: auto; }
 
 .button:hover {
     background-position: 0 0;
