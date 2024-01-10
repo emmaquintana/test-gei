@@ -1,6 +1,6 @@
 import { RefObject } from "react";
 
-export default function randomChangePosition(ref: RefObject<HTMLElement>, event: React.MouseEvent) {
+export default function randomChangePosition(ref: RefObject<HTMLElement>, event?: React.MouseEvent) {
   if (ref.current) {
 
     let windowHeight = window.innerHeight;
