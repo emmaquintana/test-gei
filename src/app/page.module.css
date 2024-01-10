@@ -15,6 +15,7 @@
     top: 0;
     margin: 5px;    
     user-select: none;
+    filter: drop-shadow(0 0 5px white);
 }
 
 .text { color: beige; }
