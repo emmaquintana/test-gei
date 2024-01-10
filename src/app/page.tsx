@@ -20,8 +20,8 @@ export default function Home() {
         <button className={styles.button} onClick={() => setModalIsDisplayed(true)}>Si 🏳️‍🌈</button>
         <button 
           className={styles.button} 
-          onMouseOver={() => randomChangePosition(noBtnRef)} 
-          onClick={() => randomChangePosition(noBtnRef)} 
+          onMouseOver={(e) => randomChangePosition(noBtnRef, e)} 
+          onClick={(e) => randomChangePosition(noBtnRef, e)} 
           ref={noBtnRef}
         >
           Ño 🤮
