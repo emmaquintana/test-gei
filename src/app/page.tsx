@@ -8,7 +8,8 @@ import randomChangePosition from '@/Assets/Util/RandomChangePosition';
 export default function Home() {
 
   const [modalIsDisplayed, setModalIsDisplayed] = useState(false);
-  const noBtnRef = useRef<HTMLButtonElement>(null);  
+  const noBtnRef = useRef<HTMLButtonElement>(null);
+  const [flag, setFlag] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,13 +19,16 @@ export default function Home() {
       }
     };
 
-    window.addEventListener('resize', handleResize);
-
+    if (flag) {
+      window.addEventListener('resize', handleResize);
+    }
+    
     // event listener clean
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+
+  }, [flag]);
 
   return (
     <section className={styles.section}>
@@ -34,10 +38,16 @@ export default function Home() {
       </h2>
       <div className={styles.buttonsContainer}>
         <button className={styles.button} onClick={() => setModalIsDisplayed(true)}>Si 🏳️‍🌈</button>
-        <button 
-          className={styles.button} 
-          onMouseOver={(e) => randomChangePosition(noBtnRef, e)} 
-          onClick={(e) => randomChangePosition(noBtnRef, e)} 
+        <button
+          className={styles.button}
+          onMouseOver={(e) => {
+            randomChangePosition(noBtnRef, e);
+            setFlag(1);
+          }}
+          onClick={(e) => {
+            randomChangePosition(noBtnRef, e);
+            setFlag(1);
+          }}
           ref={noBtnRef}
         >
           Ño 🤮
