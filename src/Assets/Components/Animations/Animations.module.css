@@ -1,0 +1,18 @@
+.fadeOutToInFromBottom { animation: fadeOutToInFromBottom linear .2s forwards; }
+.fadeOutToIn { animation: fadeOutToIn linear .2s forwards; }
+
+@keyframes fadeOutToInFromBottom {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutToIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
