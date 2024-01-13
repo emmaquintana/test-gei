@@ -1,0 +1,17 @@
+{
+    "name": "Test gei",
+    "short_name": "Test gei",
+    "description": "Descubre si eres gei o no!",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#ff2890",
+    "icons": [
+      {
+        "src": "/favicon.ico",
+        "sizes": "any",
+        "type": "image/x-icon"
+      }
+    ]
+  }
+  
