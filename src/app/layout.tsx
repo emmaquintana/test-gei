@@ -7,6 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: '¿Eres gei?',
   description: 'Descubre si eres gei o no!',
+  authors: {name: 'Emmanuel Quintana'},
+  themeColor: '#ff2890'
 }
 
 export default function RootLayout({
